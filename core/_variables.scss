@@ -1,3 +1,22 @@
+/**
+*     'Polyfill' (not really, but for lack of a better term...)
+*     to support the broken reference to the System font stack
+*     variable deprecated in the newest version of Bourbon.
+*
+*     credit: https://css-tricks.com/snippets/css/system-font-stack/
+**/
+
+// Font Stacks
+
+/* System Fonts as used by GitHub */
+$font-stack-system__github: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+/* System Fonts as used by Medium and WordPress */
+$font-stack-system__medium: font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+
+/* Set further variables here ... (in other words, choose one) */
+$font-stack-system: $font-stack-system__medium;
+
 // Typography
 $base-font-family: $font-stack-system;
 $heading-font-family: $base-font-family;
